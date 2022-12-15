@@ -7,7 +7,7 @@ const connect = async () => {
             useNewUrlParser: true,
             useUnifiedTopology: true
         })
-        console.log("Banco conectado")
+        console.log("Banco de dados conectado")
     } catch (error) {
         console.error("Erro: ", error.message)
     }
