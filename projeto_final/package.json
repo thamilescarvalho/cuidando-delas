@@ -20,5 +20,13 @@
     "mongodb": "^4.12.1",
     "mongoose": "^6.8.0",
     "nodemon": "^2.0.20"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thamilescarvalho/cuidando-delas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/thamilescarvalho/cuidando-delas/issues"
+  },
+  "homepage": "https://github.com/thamilescarvalho/cuidando-delas#readme"
 }
