@@ -4,15 +4,16 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 
-const db = require('./config/mongoConfig.js')
-const todasAsRotas = require('./routers/rotasCadastro')
-const indexRouter = require('./routers/indexRoutes')
+const database = require('./config/database')
+const rotasDeCadastro = require('./routers/rotasCadastro')
+const indexRouters = require('./routers/indexRoutes')
 
 app.use(cors());
 app.use(express.json());
-app.use("/cadastro", todasAsRotas);
 
-db.connect();
-app.use(indexRouter)
+database.connect();
+
+app.use("/cadastro", rotasDeCadastro);
+app.use(indexRouters)
 
 module.exports = app;

@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 const CadastroDelasSchema = require('../models/cadastroDelasSchema')
-const SECRET = process.env.SECRET
 
 const { query } = require('express');
 
